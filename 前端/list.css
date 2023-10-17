@@ -1,0 +1,625 @@
+    * {
+        padding: 0;
+        margin: 0;
+        list-style: none;
+    }
+
+    .box {
+        width: 1300px;
+        margin: auto;
+        background-color: rgb(242, 245, 255);
+    }
+
+    .todolist {
+        width: 1250px;
+        height: 200px;
+        margin: auto;
+    }
+
+    .todolist-title {
+        width: 100%;
+        height: 40px;
+    }
+
+    .tododi {
+        width: 100%;
+        height: 150px;
+        display: flex;
+        justify-content: space-between;
+    }
+
+    .todolist-one {
+        width: 190px;
+        height: 130px;
+        background-color: #fff;
+        border-radius: 10px;
+        position: relative;
+        transition: box-shadow 0.3s, transform 0.3s;
+    }
+
+    .todolist-one:hover {
+        box-shadow: 0px 5px 10px rgba(0, 0, 0, 0.3);
+        transform: translateY(-5px);
+    }
+
+    .todolist-one h3 {
+        display: inline-block;
+        margin-top: 20px;
+        margin-left: 20px;
+
+    }
+
+    .todolist-one p {
+        position: absolute;
+        top: 50px;
+        left: 20px;
+        font-size: 14px;
+    }
+
+    .todolist-one h2 {
+        position: absolute;
+        left: 20px;
+        top: 75px;
+        color: rgb(115, 126, 243);
+    }
+
+    .todolist-one:nth-child(2) h2 {
+        position: absolute;
+        left: 20px;
+        top: 75px;
+        color: rgb(250, 98, 73);
+    }
+
+    .todolist-one:nth-child(3) h2 {
+        position: absolute;
+        left: 20px;
+        top: 75px;
+        color: rgb(89, 206, 125);
+    }
+
+    .todolist-one:nth-child(4) h2 {
+        position: absolute;
+        left: 20px;
+        top: 75px;
+
+        color: rgb(66, 146, 253);
+    }
+
+    .todolist-one:nth-child(5) h2 {
+        position: absolute;
+        left: 20px;
+        top: 75px;
+
+        color: rgb(248, 155, 74);
+    }
+
+    .todolist-one:nth-child(6) h2 {
+        position: absolute;
+        left: 20px;
+        top: 75px;
+
+        color: rgb(21, 207, 185);
+    }
+
+    .newadd {
+        width: 1250px;
+        height: 400px;
+        margin: auto;
+    }
+
+    .newadd-left {
+        width: 600px;
+        height: 100%;
+        float: left;
+    }
+
+    .newadd-left:nth-child(2) {
+        width: 600px;
+        height: 100%;
+        float: left;
+        margin-left: 50px;
+    }
+
+    .newadd-title {
+        width: 100%;
+        height: 30px;
+    }
+
+    .newadd-title h3 {
+        display: inline;
+    }
+
+    .newadd-title li {
+        width: 60px;
+        height: 28px;
+        background-color: #fff;
+        border-radius: 10px;
+        float: right;
+        margin-right: 10px;
+        font-size: 13px;
+        text-align: center;
+        line-height: 28px;
+        cursor: pointer;
+    }
+
+    .xiantu {
+        width: 100%;
+        height: 330px;
+        margin-top: 23px;
+        background-color: #fff;
+        border-radius: 10px;
+    }
+
+    .zhuangtu {
+        width: 100%;
+        height: 330px;
+        margin-top: 23px;
+        background-color: #fff;
+        border-radius: 10px;
+    }
+
+    .Operational {
+        width: 1250px;
+        height: 540px;
+        margin: auto
+    }
+
+    .Operational-title {
+        width: 100%;
+        height: 40px;
+        margin-top: 10px;
+    }
+
+    .Operational-title h3 {
+        display: inline;
+        line-height: 40px;
+    }
+
+    .date {
+        width: 570px;
+        float: right;
+        display: flex;
+        justify-content: space-between;
+    }
+
+    .date input {
+        margin-left: 10px;
+        width: 120px;
+        height: 24px;
+        margin-top: 5px;
+    }
+
+    .Operational-title ul {
+        display: inline;
+        line-height: 40px;
+    }
+
+    .Operational-title li {
+        width: 60px;
+        height: 28px;
+        background-color: #fff;
+        border-radius: 10px;
+        float: right;
+        margin-right: 10px;
+        font-size: 13px;
+        text-align: center;
+        line-height: 28px;
+        cursor: pointer;
+        margin-top: 5px;
+    }
+
+    .operate {
+        width: 100%;
+        height: 450px;
+        background-color: #fff;
+        border-radius: 10px;
+        margin-top: 20px;
+    }
+
+    .operate-left {
+        width: 500px;
+        height: 450px;
+        float: left;
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-around;
+        align-content: space-around;
+    }
+
+    .operate-one {
+        width: 200px;
+        height: 120px;
+        background-color: rgb(242, 245, 255);
+        border-radius: 10px;
+        position: relative;
+        transition: box-shadow 0.3s, transform 0.3s;
+    }
+
+    .operate-one:hover {
+        box-shadow: 0px 5px 10px rgba(0, 0, 0, 0.3);
+        transform: translateY(-5px);
+        background-color: #fff;
+    }
+
+    .operate-one p {
+        position: absolute;
+        top: 20px;
+        left: 20px;
+    }
+
+    .operate-one h2 {
+        position: absolute;
+        top: 50px;
+        left: 20px;
+    }
+
+    .operate-right {
+        width: 700px;
+        height: 100%;
+        margin-left: 50px;
+        float: right;
+    }
+
+    .zhuzhaungtu {
+        width: 100%;
+        height: 330px;
+        margin-top: 23px;
+        background-color: #fff;
+        border-radius: 10px;
+    }
+
+    .bingtu {
+        width: 100%;
+        height: 330px;
+        margin-top: 23px;
+        background-color: #fff;
+        border-radius: 10px;
+    }
+
+    .flow {
+        width: 1250px;
+        height: 450px;
+        margin: auto;
+        margin-top: 20px;
+    }
+
+    .flow-title {
+        width: 100%;
+        height: 40px;
+    }
+
+    .flow-title h3 {
+        display: inline;
+    }
+
+    .flow-title ul {
+        display: inline;
+    }
+
+    .flow-title li {
+        width: 60px;
+        height: 28px;
+        background-color: #fff;
+        border-radius: 10px;
+        float: right;
+        margin-right: 10px;
+        font-size: 13px;
+        text-align: center;
+        line-height: 28px;
+        cursor: pointer;
+        margin-top: 5px;
+    }
+
+    .flowbo {
+        width: 100%;
+        height: 400px;
+        background-color: #fff;
+        border-radius: 20px;
+    }
+
+    .flow-left {
+        width: 300px;
+        height: 400px;
+        float: left;
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-around;
+        align-content: space-around;
+    }
+
+
+    .flow-one {
+        width: 200px;
+        height: 120px;
+        border-radius: 10px;
+        position: relative;
+        background-color: rgb(242, 245, 255);
+        transition: box-shadow 0.3s, transform 0.3s;
+    }
+
+    .flow-one:hover {
+        box-shadow: 0px 5px 10px rgba(0, 0, 0, 0.3);
+        transform: translateY(-5px);
+        background-color: #fff;
+    }
+
+    .flow-one .color {
+        width: 10px;
+        height: 10px;
+        background-color: rgb(49, 148, 252);
+        border-radius: 2px;
+        position: absolute;
+        top: 30px;
+        left: 20px;
+    }
+
+    .flow-one:nth-child(2) .color {
+        width: 10px;
+        height: 10px;
+        background-color: rgb(103, 191, 41);
+        border-radius: 2px;
+        position: absolute;
+        top: 30px;
+        left: 20px;
+    }
+
+    .flow-one p {
+        position: absolute;
+        top: 25px;
+        left: 40px;
+    }
+
+    .flow-one h2 {
+        position: absolute;
+        top: 60px;
+        left: 40px;
+    }
+
+    .flow-right {
+        width: 900px;
+        height: 400px;
+        float: right;
+    }
+
+    .Ranking {
+        width: 1250px;
+        height: 510px;
+        margin: auto;
+    }
+
+    .Ranking-left {
+        width: 600px;
+        height: 510px;
+        display: inline-block;
+    }
+
+    .Ranking-right {
+        width: 600px;
+        height: 510px;
+        float: right;
+    }
+
+    .Ranking-left-title {
+        width: 100%;
+        height: 40px;
+    }
+
+    .Ranking-left-title h3 {
+        display: inline;
+    }
+
+    .Ranking-left-title ul {
+        display: inline;
+    }
+
+    .Ranking-left-title li {
+        width: 60px;
+        height: 28px;
+        background-color: #fff;
+        border-radius: 10px;
+        float: right;
+        margin-right: 10px;
+        font-size: 13px;
+        text-align: center;
+        line-height: 28px;
+        cursor: pointer;
+        margin-top: 5px;
+    }
+
+    .Rankingbo {
+        width: 100%;
+        height: 460px;
+        background-color: #fff;
+        border-radius: 20px;
+        float: left;
+    }
+
+    .Rankingbo-title {
+        width: 100%;
+        height: 40px;
+        margin-top: 20px;
+        display: inline-block;
+    }
+
+    .Rankingbo-title p {
+        float: right;
+        margin-right: 40px;
+        line-height: 40px;
+        color: rgb(116, 125, 170);
+    }
+
+    .RankingList {
+        width: 500px;
+        height: 360px;
+        border: 1px solid #e2e3e2;
+        border-radius: 10px;
+        margin: auto;
+    }
+
+    .RankingList-title {
+        width: 100%;
+        height: 30px;
+        background-color: rgb(242, 245, 255);
+        border-top-left-radius: 10px;
+        border-top-right-radius: 10px;
+    }
+
+    .Rankingright-title {
+        width: 100%;
+        height: 30px;
+        background-color: rgb(242, 245, 255);
+        border-top-left-radius: 10px;
+        border-top-right-radius: 10px;
+    }
+
+    .Rankingright-title li {
+        float: left;
+        line-height: 30px;
+        font-size: 14px;
+        font-weight: bold;
+    }
+
+    .Rankingright-title li:nth-child(1) {
+        width: 100px;
+        text-align: center;
+    }
+
+    .Rankingright-title li:nth-child(2) {
+        width: 260px;
+    }
+
+    .RankingList-title li {
+        float: left;
+        line-height: 30px;
+        font-size: 14px;
+        font-weight: bold;
+    }
+
+    .RankingList-title li:nth-child(1) {
+        width: 100px;
+        text-align: center;
+    }
+
+    .RankingList-title li:nth-child(2) {
+        width: 150px;
+    }
+
+    .RankingList-title li:nth-child(3) {
+        width: 120px;
+    }
+
+    .RankingList-coom ul {
+        width: 100%;
+        height: 65px;
+        border-bottom: 1px solid #e2e3e2;
+    }
+
+    .RankingList-coom li {
+        float: left;
+        font-size: 14px;
+    }
+
+    .RankingList-coom li img {
+        width: 50px;
+        height: 50px;
+        object-fit: cover;
+        margin-top: 8px;
+        border-radius: 10px;
+    }
+
+    .RankingList-coom li:nth-child(1) {
+        width: 100px;
+        text-align: center;
+        line-height: 65px;
+    }
+
+    .RankingList-coom li:nth-child(2) {
+        width: 50px;
+        height: 65px;
+    }
+
+    .RankingList-coom li:nth-child(3) {
+        width: 90px;
+        height: 50px;
+        overflow: hidden;
+        display: -webkit-box;
+        -webkit-line-clamp: 3;
+        -webkit-box-orient: vertical;
+        text-overflow: ellipsis;
+        margin-top: 8px;
+        margin-left: 8px;
+        font-size: 13px;
+    }
+
+    .RankingList-coom li:nth-child(4) {
+        width: 120px;
+        line-height: 65px;
+        text-align: center;
+    }
+
+    .RankingList-coom li:nth-child(5) {
+        line-height: 65px;
+    }
+
+    .RankingList-coom ul:nth-child(5) {
+        border-bottom: none;
+    }
+
+    .Rankingright-coom ul {
+        width: 100%;
+        height: 65px;
+        border-bottom: 1px solid #e2e3e2;
+        position: relative;
+    }
+
+    .Rankingright-coom img {
+        width: 50px;
+        height: 50px;
+        object-fit: cover;
+        margin-top: 8px;
+        border-radius: 50%;
+    }
+
+    .Rankingright-coom li {
+        float: left;
+        font-size: 14px;
+    }
+
+    .Rankingright-coom li:nth-child(1) {
+        width: 90px;
+        text-align: center;
+        line-height: 65px;
+    }
+
+    .Rankingright-coom li:nth-child(2) {
+        width: 50px;
+        height: 65px;
+    }
+
+    .Rankingright-coom li:nth-child(3) {
+        width: 90px;
+        height: 50px;
+        position: absolute;
+        top: 10px;
+        left: 150px;
+        font-size: 13px;
+    }
+
+    .Rankingright-coom li:nth-child(4) {
+        width: 90px;
+        height: 50px;
+        position: absolute;
+        left: 150px;
+        top: 27px;
+        font-size: 13px;
+    }
+
+    .Rankingright-coom li:nth-child(5) {
+        width: 140px;
+        line-height: 65px;
+        float: right;
+    }
+
+    .Rankingright-coom ul:nth-child(5) {
+        border-bottom: none;
+    }
